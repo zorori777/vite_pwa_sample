@@ -7,8 +7,7 @@ export default defineConfig({
   base: "./",
   root: "./src",
   build: {
-    // root (= ./src) から見た相対パスで指定
-    outDir: "../public",
+    outDir: "../docs",
     emptyOutDir: true,
   },
   plugins: [react(), VitePWA({})],
