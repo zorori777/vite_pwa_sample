@@ -5,5 +5,11 @@ import {VitePWA} from "vite-plugin-pwa";
 // https://vitejs.dev/config/
 export default defineConfig({
   base: "./",
+  root: "./src",
+  build: {
+    // root (= ./src) から見た相対パスで指定
+    outDir: "../public",
+    emptyOutDir: true,
+  },
   plugins: [react(), VitePWA({})],
 });
